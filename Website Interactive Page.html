@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://www.public.asu.edu/~adietric/portfolio/Interactive.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Website Interactive Page</title>
+
+<link rel="stylesheet" type="text/css" href="./Website Interactive Page_files/WebsiteCSS.css">
+<script src="./Website Interactive Page_files/jquery-1.11.3.min.js.download">
+</script>
+<script type="text/javascript" src="./Website Interactive Page_files/WebsiteJavascript.js.download">
+</script>
+</head>
+
+<body onload="normal()" style="background-color: rgb(205, 115, 160);">
+
+<header>
+<img src="./Website Interactive Page_files/logo1.png" class="logo" alt="logo" id="logo1">
+<img src="./Website Interactive Page_files/logo2.png" class="logo" alt="logo2" id="logo2">
+<img src="./Website Interactive Page_files/logo3.png" class="logo" alt="logo3" id="logo3">
+<a href="http://www.public.asu.edu/~adietric/portfolio/Home.html"><canvas id="Canvas1" width="400" height="320" onmouseover="move()" onmouseout="normal()"></canvas></a>
+</header>
+
+<nav role="navigation" id="navi" style="background-color: rgb(0, 0, 0);">
+	<ul>
+		<li><a href="http://www.public.asu.edu/~adietric/portfolio/Home.html">Home</a></li>
+	    <li><a href="http://www.public.asu.edu/~adietric/portfolio/Interactive.html">Interactive</a></li>
+	    <li><a href="http://www.public.asu.edu/~adietric/portfolio/Responsive.html">Responsive</a></li>
+	</ul>
+</nav>
+
+<section>
+	<h1>Interactive Page</h1>
+<div id="size" class="hide">
+<p>Display's the current size of the window</p>
+<p id="screen"></p>
+<p id="Tablet">TABLET</p>
+<p id="Phone">PHONE</p>
+</div>
+	<div onmouseover="rotateDIV()" id="rotate2D" style="transform: rotate(360deg);">
+		<img src="./Website Interactive Page_files/spin_100x100.png" id="idk" alt="idk">
+	</div>
+
+	<div id="reset">
+		<p>Reset all changes made</p>
+		<button type="button" onclick="Reset()">Reset</button>
+	</div>
+
+	<div onclick="Poof()" id="poof" style="opacity: 0.2; display: none;">
+		<p>Click here to fade this sentance away.</p><p id="add">Little by little it fades away. Soon to be gone for good. Half way there. Will you make it disappear for good? Almost there. Bye. Bye.</p>
+	</div>
+
+	<div id="block" style="background-color: rgb(205, 115, 160);"></div>
+	<p id="peekaboo">You found me</p>
+	
+	<div id="pchange">
+		<img src="./Website Interactive Page_files/Arrow_Left_100x100.png" onclick="Back()" alt="Left_Arrow" id="left" class="arrow">
+		<img src="./Website Interactive Page_files/1.png" alt="picture_1" id="m1">
+		<img src="./Website Interactive Page_files/2.png" alt="picture_2" id="m2">
+		<img src="./Website Interactive Page_files/Arrow_Right_100x100.png" onclick="Forward()" id="right" alt="Right_Arrow" class="arrow">
+	</div>
+</section>
+
+<aside>
+	<form>
+    	<div id="divy">
+			<div id="test">
+		    	<p>Enter 6 #'s and/or letters from A-F to change background color</p>
+		    	<input type="text" id="Color" value="0FB2A9">
+		        <button type="button" onclick="User()">change</button>
+		        <p id="check">#cd73a0</p>
+		    </div>
+			<div id="background">
+				<button type="button" onclick="BackgroundColor()">Changes Background Color</button>
+			</div>
+        </div>
+	</form>
+    <div id="sections">
+	<p>Click the buttons below to remove/retrieve certain sections</p>
+
+    	<button type="button" id="S1">Section 1</button>
+       	<button type="button" id="S2">Section 2</button>
+    	<button type="button" id="S3">Section 3</button>
+    	<button type="button" id="AS">Return All</button>
+	</div>
+    <div id="Section1" style="display: inherit;"><p>Section 1</p></div>
+    <div id="Section2" style="display: inherit;"><p>Section 2</p></div>
+	<div id="Section3" style="display: inherit;"><p>Section 3</p></div>
+</aside>
+<footer>
+<p id="contact">Contact: Audietrich@gmail.com  </p>
+</footer>
+
+</body></html>
